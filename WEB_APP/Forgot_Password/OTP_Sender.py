@@ -3,8 +3,8 @@ import smtplib
 import colorama
 from email.message import EmailMessage
 def otp_sender(email, name):
-    sender_id = "singhabhinay9595@gmail.com"
-    sender_password =  "Abhinay@2000"
+    sender_id = "abc@gmail.com"
+    sender_password =  "XXXXX"
     msg = EmailMessage()
     otp = random.randint(1000, 10000)
     body = f"Hey {name} !! \n\nYou have asked for forgot password \nThis is the OTP to change the password : {otp} \n\nBelow are the information you have provided to us\n\nName : {name} \nEmail : {email}\n\nIf you have not asked for this then ignore this message\n\nThank you."
