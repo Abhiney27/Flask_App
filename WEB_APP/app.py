@@ -9,8 +9,8 @@ from Forgot_Password import OTP_Sender
 import os
 
 IST = pytz.timezone('Asia/Kolkata')
-# mongo_sever_url = "mongodb+srv://username:<password>@cluster1.lr3jc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
-mongo_sever_url = "mongodb://127.0.0.1:27017/?readPreference=primary&appname=MongoDB%20Compass&ssl=false"
+mongo_sever_url = "mongodb+srv://Abhiney:95958678@cluster1.lr3jc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+#mongo_sever_url = "mongodb://127.0.0.1:27017/?readPreference=primary&appname=MongoDB%20Compass&ssl=false"
 client = MongoClient(mongo_sever_url)
 
 app = Flask("Mail App")
