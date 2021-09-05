@@ -66,9 +66,9 @@ def login():
 
                 try:
                     lastLoginTime = login_email['lastLoginTime']
-                    return render_template("service.html" , email = email, name = name , lastLoginTime = lastLoginTime, phone = phone, loginTime = loginTime )
+                    return render_template("Service.html" , email = email, name = name , lastLoginTime = lastLoginTime, phone = phone, loginTime = loginTime )
                 except:
-                    return render_template("service.html" , email = email, name = name , lastLoginTime = ": you are new user", phone = phone, loginTime = loginTime ) 
+                    return render_template("Service.html" , email = email, name = name , lastLoginTime = ": you are new user", phone = phone, loginTime = loginTime ) 
 
             return render_template("error.html")
         else:
